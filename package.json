@@ -1,0 +1,63 @@
+{
+  "name": "angular-project",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:run": "vitest run",
+    "tdd": "vitest --watch",
+    "lint": "ng lint",
+    "format": "prettier --write src/**/*.{ts,html,css,scss,json}",
+    "format:check": "prettier --check src/**/*.{ts,html,css,scss,json}",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/forms": "^20.3.0",
+    "@angular/platform-browser": "^20.3.0",
+    "@angular/router": "^20.3.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular-eslint/builder": "20.3.0",
+    "@angular-eslint/eslint-plugin": "20.3.0",
+    "@angular-eslint/eslint-plugin-template": "20.3.0",
+    "@angular-eslint/schematics": "20.3.0",
+    "@angular-eslint/template-parser": "20.3.0",
+    "@angular/build": "^20.3.4",
+    "@angular/cli": "^20.3.4",
+    "@angular/compiler-cli": "^20.3.0",
+    "@angular/platform-browser-dynamic": "^20.3.3",
+    "@types/jsdom": "^27.0.0",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "8.57.1",
+    "jsdom": "^27.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "~5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
